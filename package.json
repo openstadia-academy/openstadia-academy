@@ -1,0 +1,16 @@
+{
+  "name": "openstadia-academy",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": "https://github.com/openstadia-academy/openstadia-academy.git",
+  "author": "Daniil Utkin <utkin@utkin.tech>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.31"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
