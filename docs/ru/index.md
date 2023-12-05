@@ -4,16 +4,16 @@ layout: home
 
 hero:
   name: "OpenStadia Academy"
-  text: "Learn development from the experts"
+  text: "Учитесь разработке у экспертов"
   image:
     src: /logo.svg
     alt: OS Academy
   actions:
     - theme: brand
-      text: Start Course
-      link: /tasks/
+      text: Начать Курс
+      link: /ru/tasks/
     - theme: alt
-      text: Videos
-      link: /videos/
+      text: Видео
+      link: /ru/videos/
 ---
 

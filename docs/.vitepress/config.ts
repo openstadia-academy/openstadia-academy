@@ -1,28 +1,17 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
+import {enConfig} from "./en";
+import {ruConfig} from "./ru";
+import {sharedConfig} from "./shared";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "OpenStadia Academy",
-  description: "OpenStadia Academy: Learn development from the experts",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    ...sharedConfig,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+    locales: {
+        root: {label: 'English', lang: 'en-US', link: '/', ...enConfig},
+        ru: {
+            label: 'Русский',
+            lang: 'ru-RU', link: '/ru/', ...ruConfig
+        },
+    },
 })

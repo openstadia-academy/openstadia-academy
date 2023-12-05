@@ -131,3 +131,7 @@ dist
 
 # IDE
 .idea
+
+# VitePress
+docs/.vitepress/cache
+docs/.vitepress/dist
